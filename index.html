@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Emploi du temps</title>
+</head>
+<body>
+
+    <header class="bg-secondary text-center text-white p-1">
+        <h1>Mon emploi du temps</h1>
+        <p>Emploi du temps hebdomadaire</p>
+    </header>
+
+    <main>
+
+        <!-- Sélection du jour sur téléphone -->
+        <section>
+            <label class="d-md-none" for="jour">Choisir un jour :</label>
+            <select class="form-select d-md-none" id="jour" name="jour">
+                <option value="lundi">Lundi</option>
+                <option value="mardi">Mardi</option>
+                <option value="mercredi">Mercredi</option>
+                <option value="jeudi">Jeudi</option>
+                <option value="vendredi">Vendredi</option>
+                <option value="samedi">Samedi</option>
+                <option value="dimanche">Dimanche</option>
+            </select>
+        </section>
+
+        <!-- Emploi du temps -->
+        <section class="container-fluid mt-4">
+            <div class="row flex-nowrap flex-md-wrap mx-0">
+                <aside class="col-auto m-0 m-md-2 p-2" aria-label="Horaires des cours">
+                    <h3 class="p-2">Horaires</h3> <br class="d-none d-md-block">
+                    <p>08h - 10h</p>
+                    <p>10h - 12h</p>
+                    <p>14h - 16h</p>
+                </aside>
+
+                <!-- Lundi -->
+                <div class="col jour border border-1 rounded-3 m-0 m-md-2 p-0" id="lundi">
+                    <h3 class="p-2 bg-secondary rounded-top-3">Lundi</h3>
+                    <p class="px-2">Mathématiques</p>
+                    <p class="px-2">Algorithmique</p>
+                    <p class="px-2">Programmation</p>
+                </div>
+
+                <!-- Mardi -->
+                <div class="col-12 col-md jour border border-1 rounded-3 m-2 p-0 d-none d-md-block" id="mardi">
+                    <h3 class="p-2 bg-secondary rounded-top-3">Mardi</h3>
+                    <p class="px-2">Réseaux</p>
+                    <p class="px-2">Base de données</p>
+                    <p class="px-2">Anglais</p>
+                </div>
+
+                <!-- Mercredi -->
+                <div class="col-12 col-md jour border border-1 rounded-3 m-2 p-0 d-none d-md-block" id="mercredi">
+                    <h3 class="p-2 bg-secondary rounded-top-3">Mercredi</h3>
+                    <p class="px-2">Développement Web</p>
+                    <p class="px-2">Bootstrap</p>
+                    <p class="px-2">TP Web</p>
+                </div>
+
+                <!-- Jeudi -->
+                <div class="col-12 col-md jour border border-1 rounded-3 m-2 p-0 d-none d-md-block" id="jeudi">
+                    <h3 class="p-2 bg-secondary rounded-top-3">Jeudi</h3>
+                    <p class="px-2">Systèmes</p>
+                    <p class="px-2">Python</p>
+                    <p class="px-2">Projet</p>
+                </div>
+
+                <!-- Vendredi -->
+                <div class="col-12 col-md jour border border-1 rounded-3 m-2 p-0 d-none d-md-block" id="vendredi">
+                    <h3 class="p-2 bg-secondary rounded-top-3">Vendredi</h3>
+                    <p class="px-2">Intelligence artificielle</p>
+                    <p class="px-2">Statistiques</p>
+                    <p class="px-2">TP Python</p>
+                </div>
+
+                <!-- Samedi -->
+                <div class="col-12 col-md jour border border-1 rounded-3 m-2 p-0 d-none d-md-block" id="samedi">
+                    <h3 class="p-2 bg-secondary rounded-top-3">Samedi</h3>
+                    <p class="px-2">Révisions</p>
+                    <p class="px-2">Projet personnel</p>
+                </div>
+
+                <!-- Dimanche -->
+                <div class="col-12 col-md jour border border-1 rounded-3 m-2 p-0 d-none d-md-block" id="dimanche">
+                    <h3 class="p-2 bg-secondary rounded-top-3">Dimanche</h3>
+                    <p class="px-2">Repos</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
